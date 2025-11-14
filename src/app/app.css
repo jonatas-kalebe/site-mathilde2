@@ -198,43 +198,60 @@
   opacity: 0.3;
 }
 
-/* Mission, Vision, Values */
-.mvv-section {
-  background: var(--bg-white);
+/* Mission Section */
+.mission-section {
   padding: 80px 0;
 }
 
-.icon-target,
-.icon-eye,
-.icon-shield {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 16px;
+.mission-content,
+.vision-content,
+.values-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mission-image,
+.vision-image,
+.values-image {
+  height: 400px;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 32px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.icon-target::before {
-  content: '🎯';
+.mission-image::after,
+.vision-image::after,
+.values-image::after {
+  content: 'Espaço para imagem';
+  opacity: 0.5;
 }
 
-.icon-eye::before {
-  content: '👁️';
+/* Vision Section */
+.vision-section {
+  padding: 80px 0;
+  background: var(--bg-white);
 }
 
-.icon-shield::before {
-  content: '🛡️';
+/* Values Section */
+.values-section {
+  padding: 80px 0;
 }
 
-.mvv-section ul {
+.values-content ul {
   list-style: none;
   padding: 0;
 }
 
-.mvv-section ul li {
-  margin-bottom: 8px;
+.values-content ul li {
+  margin-bottom: 12px;
   padding-left: 0;
 }
 
